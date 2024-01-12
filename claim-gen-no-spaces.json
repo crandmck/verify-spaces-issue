@@ -1,0 +1,69 @@
+{
+    "alg": "es256",
+    "private_key": "es256_private.key",
+    "sign_cert": "es256_certs.pem",
+    "ta_url": "http://timestamp.digicert.com",
+    
+    "claim_generator": "C2PA-Tool-test-certs",
+    "title": "beach-biking.jpeg",
+    "assertions": [
+        {
+            "label": "stds.schema-org.CreativeWork",
+            "data": {
+                "@context": "https://schema.org",
+                "@type": "CreativeWork",
+                "author": [
+                    {
+                        "@type": "Person",
+                        "name": "Rand McKinney"
+                    },
+                    {
+                        "@id": "https://behance.net/randmckinney",
+                        "@type": "Person",
+                        "name": "randmckinney"
+                      },
+                      {
+                        "@id": "https://twitter.com/randmckinney",
+                        "@type": "Person",
+                        "name": "randmckinney"
+                      },
+                      {
+                        "@id": "https://instagram.com/randmckinney",
+                        "@type": "Person",
+                        "name": "randmckinney"
+                      },
+                      {
+                        "@id": "https://facebook.com/rand.mckinney",
+                        "@type": "Person",
+                        "name": "rand.mckinney"
+                      }                    
+                ]
+            }
+        },
+        {
+            "label": "c2pa.actions",
+            "data": {
+                "actions": [
+                    {
+                        "action": "c2pa.opened"
+                    }
+                ],
+                "metadata": {
+                    "reviewRatings": [
+                        {
+                            "code": "c2pa.unknown",
+                            "explanation": "Something untracked happened",
+                            "value": 4
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "label": "my.assertion",
+            "data": {
+                "any_tag": "whatever I want"
+            }
+        }
+    ]
+}
